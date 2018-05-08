@@ -19,18 +19,24 @@
   
 
 <style type="text/css">
-body {
-  padding: 0;
-  margin: 0;
+body, html {
+    height: 100%;
+    margin: 0;
 }
-#top {
-   background-image: url("https://dr-kunto.github.io/cilincing-cyberart.community/icon/hotel.jpg")
-   width: 100%;
-   margin: 0;
-   padding: 0;
-   top: 0;
-   left: 0;
+
+.bg {
+    /* The image used */
+    background-image: url(""https://dr-kunto.github.io/cilincing-cyberart.community/icon/hotel.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+   
 .mfp-hide {
     display: none!important;
 }
@@ -100,7 +106,8 @@ $('#videoLink')
 </script>
 
 </head>
-<body oncontextmenu="return false">	
+<body oncontextmenu="return false">
+<div class="bg">
   <div class="content">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 <h1><span>Up-To-Date</span>
@@ -109,7 +116,8 @@ Tv Streaming Indonesia</h1>
 <div id="videoStory" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
  <iframe allowfullscreen="true" allowtransparency="true" frameborder="0" height="640" scrolling="no" src="https://dr-kunto.github.io/BsCity-Ak.United/001/cilincing-cyberart-community.html?rel=0" style="border: none; overflow: hidden;" width="100%"></iframe>
 </div>
-</div> 
+</div>
+</div>
   <script>
   // tell the embed parent frame the height of the content
   if (window.parent && window.parent.parent){
